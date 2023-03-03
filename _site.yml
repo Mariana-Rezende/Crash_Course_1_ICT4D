@@ -8,4 +8,10 @@ navbar:
     - text: "About"
       href: about.html
     - text: "Projects"
-      href: crash-course.html
+      menu:
+      - text: "Data in Practice"
+        href: crash-course.html
+      - text: "Crash Course 2"
+        href: 
+      - text: "Crash course 3"
+        href: 

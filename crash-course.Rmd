@@ -11,12 +11,16 @@ devtools::install_github('jimhester/knitrBootstrap')
 
 
 ## My Journey to ICT4D Master
-Hi, I'm Mariana `r emo::ji("happy") #https://github.com/hadley/emo` and this is how I ended up in the ICT For Development and Social Good from University of Turin!
+Hi, I'm Mariana `r emo::ji("happy") #https://github.com/hadley/emo` and this is how I ended up in the ICT for Social Good Master from University of Turin!
+\
 
+\
 
 ### Who am I?
 I'm a Brazilian data specialist with a track record in the private sector in multiple
-stages of the data cycle, such as data analysis, data engineering and information visualization. I'm currently based in Rio de Janeiro, the second largest city in Brazil. Check my location in the map!
+stages of the data cycle, such as data analysis, data engineering and information visualization. I'm currently based in Rio de Janeiro, the second largest city in Brazil.<br><br>Check my location in the map!
+\
+
 
 ```{r pressure, echo=FALSE, message=FALSE}
 #adjust size
@@ -26,27 +30,34 @@ source("data-in-practice/map.R", local = knitr::knit_global())
 map = get_geojson_map(data)
 map
 ```
-Since the beginning of my career, I've been looking for ways to promote meaningful societal changes through the technical knowledge and skills I acquired in the technology sector.
+Since the beginning of my career, I've been looking for ways to promote meaningful societal changes through the technical knowledge and skills I acquired in the technology sector. I always wanted to be more engaged in projects to deliver positive impact through digital solutions and found in the ICT4D Master the opportunity to do so! `r emo::ji("happy")`
+\
 
-I always wanted to be more engaged in projects to deliver positive impact through digital solutions and found in the ICT4D Master the opportunity to do so.
+\
 
 
+\newpage
 ### Who are my classmates?
-One of the greatest things about this Master's is the variety of the student's locations and backgrounds. This promote a broader global approach...sharing different points of view.
+One of the greatest things about this Master's is the variety of the student's locations and backgrounds. This promote a broader global approach and allow us to share different points of view during the lectures.
 
-Note that according to an internal survey none of us share the exactly same education background and there is also a balance between degrees related more to Humanities studies and also the ones related to technical areas. 
+Note that according to an internal survey, none of us share the exactly same educational background and there is also a fair balance between backgrounds more related to Humanities studies as well as ones related to more Technical areas.
 
 
-```{r plots, echo=FALSE, message=FALSE, results = FALSE, out.width='25%', fig.show='hold'}
+```{r plots, echo=FALSE, message=FALSE, results = FALSE, out.width='75%', fig.show='hold'}
 data = read.csv("data-in-practice/origin_answers.csv", sep=";")
 
 source("data-in-practice/plots.R", local = knitr::knit_global())
 create_pie_chart(data)
 create_bar_chart(data)
 ```
+\
+
+\
+
 
 ### Who is teaching?
-This is a random visual I made just to prove I could and confirm that our first Crash Course taught by Georges Labreche - The Data in Practice crash course -  was super awesome!
+
+During our last class, we ran some surveys among the students. In my form, I asked them where they came from, a country they have already been and a place they would like to go. The answers resulted in this connections map, which I made using the geosphere library, a technique I was willing to test for further purposes. After all, this is just a random visual I made to prove I could `r emo::ji("happy")`and confirm that our first Crash Course taught by Georges Labreche - **The Data in Practice Crash Course** -  was super awesome!
 
 ```{r creative, echo=FALSE}
 data = read.csv(file="data-in-practice/survey.csv")
@@ -54,20 +65,16 @@ data = read.csv(file="data-in-practice/survey.csv")
 source("data-in-practice/creative.R", local = knitr::knit_global())
 plot_creative_map(data)
 ```
+<br>
+<br>
+**REFERENCES**
+\
 
-During our last class, we ran some surveys among the students. In my form, I asked them where they came from, a country they have already been and a place they would like to go. The answers resulted in this connections map, which I made using the geosphere library, a technique I was willing to test for further purposes.
+**Brazilian states** map https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/brazil-states.geojson
 
+**Plots** Collected data
 
-**references**
-
-
-Brazilian states map https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/brazil-states.geojson
-
-Plots
-Collected data
-
-Connection map Tutorial
-https://r-graph-gallery.com/connection-map.html
+**Connection Map Tutorial** https://r-graph-gallery.com/connection-map.html
 
 
 

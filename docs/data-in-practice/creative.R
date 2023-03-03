@@ -25,6 +25,8 @@ plot_creative_map = function(data){
   #Countries wish
   points(x=data$wish_long, y=data$wish_lat, col="pink", cex=2, pch=20)
   
+  text(data$"Where do you come from?", x=data$origin_long, y=data$origin_lat,  col="slateblue", cex=1, pos=4)
+  
   
   #compute connection
   for (i in 1:nrow(data)){
