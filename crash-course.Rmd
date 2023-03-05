@@ -38,18 +38,20 @@ Since the beginning of my career, I've been looking for ways to promote meaningf
 
 \newpage
 ### Who are my classmates?
-One of the greatest things about this Master's is the variety of the student's locations and backgrounds. This promote a broader global approach and allow us to share different points of view during the lectures.
+One of the greatest things about this Master's is the variety of the student's locations and backgrounds. Despite the majority of the students being Italian, as it is an Italian institution, there are people from all over the world who joined the class. This promotes a broader global approach and allows us to share different points of view during the lectures.
 
 Note that according to an internal survey, none of us share the exactly same educational background and there is also a fair balance between backgrounds more related to Humanities studies as well as ones related to more Technical areas.
 
 
-```{r plots, echo=FALSE, message=FALSE, results = FALSE, out.width='75%', fig.show='hold'}
+```{r plots, echo=FALSE, message=FALSE, results = FALSE, out.width='50%', fig.show='hold'}
 data = read.csv("data-in-practice/origin_answers.csv", sep=";")
 
 source("data-in-practice/plots.R", local = knitr::knit_global())
 create_pie_chart(data)
 create_bar_chart(data)
 ```
+
+The plots don't reflect the reality of the whole class, as I had few answers during the survey.
 \
 
 \
